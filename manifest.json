@@ -1,0 +1,23 @@
+{
+  "name": "103FM Downloader",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Download 103FM content in MP3 format",
+  "permissions": ["tabs", "*://103fm.maariv.co.il/programs/media*"],
+  "web_accessible_resources": ["/images/link50.png"],
+  "content_scripts": [
+    {
+      "matches": ["*://103fm.maariv.co.il/programs/media*"],
+      "js": ["script.js"]
+    }
+  ],
+   "page_action": {
+    "default_icon": "images/32mouth.png",
+    "default_title": "103FM Downloader"
+  },
+  "icons": { 
+                "16":"images/icon-16.png", 
+                "48":"images/icon-48.png", 
+                "128":"images/icon-128.png" 
+        }
+}
