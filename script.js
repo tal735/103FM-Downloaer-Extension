@@ -24,8 +24,8 @@ img.style = 'width: 50px;height: 50px;margin-bottom: 40px;margin-right: 20px;cur
 a.appendChild(img);
 
 //add button to HTML DOM before 'Play' button
-var list = getElementByXpath('//*[@id="form1"]/div[6]/div');
-list.insertBefore(a, list.childNodes[0]);  
+var list = document.querySelector(".content_centerblock.player");
+list.insertBefore(a, list.childNodes[2]);  
 }
 
 //add button to html
